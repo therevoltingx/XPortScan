@@ -1,0 +1,4 @@
+WX_CPP_FLAGS = -I/usr/local/lib/wx/include/gtk-2.4 -DGTK_NO_CHECK_CASTS -D__WXGTK__ -D_FILE_OFFSET_BITS=64 -D_LARGE_FILES
+
+WX_L_FLAGS = -L/usr/local/lib -pthread    /usr/local/lib/libwx_gtk-2.4.a -L/usr/lib -L/usr/X11R6/lib -lgtk -lgdk -rdynamic -lgmodule -lgthread -lglib -lpthread -ldl -lXi -lXext -lX11 -lm -lpng -ljpeg -ltiff -ldl -lm 
+

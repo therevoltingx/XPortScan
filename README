@@ -1,0 +1,4 @@
+XPortScan is a cross-platform lightweight gui multi-threaded port scanner. 
+This is the XPortScan v. 2.1 beta 
+Currently only tcp connect() scanning (vanilla scan) is included, although more advance port scan methods are in the works.
+(actually you can see how it's going in the source code.)

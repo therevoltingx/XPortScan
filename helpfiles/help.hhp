@@ -1,0 +1,12 @@
+[OPTIONS]
+Compatibility=1.1
+Compiled file=testing.chm
+Contents file=contents.hhc
+Display compile progress=No
+Index file=Index.hhk
+Language=0x405 Èesky
+Title=Port Scanning
+Default topic=intro.html
+
+[FILES]
+intro.html

@@ -1,0 +1,38 @@
+Currently I only support three compilers, Dev-C++ and Borland for windows, and gcc for Linux.
+
+Dev-C++:
+You must have the latest Dev-C++ (currently version 4.9.8.0)
+Plus you must have these development kits for dev-c++:
+ImageLib (http://bloodshed.net/dev/packages/imagelib.html)
+wxWindows Development Kit v. 2.40 for Dev-C++. (http://bloodshed.net/dev/packages/wxwindows.html)
+
+After installing these packages:
+Open xportscan.dev in the src directory and press F9 to compile.
+
+
+Borland:
+You must have wxWindows installed, and compiled, this is somewhat harder for Borland.
+It is simple if you read their documentation, and with some experince.
+After that:
+From a command prompt, simply:
+make -f makefile.b32
+
+Linux:
+
+You must have wxGtk 2.40 or later installed in your system, either from source or 
+from an RPM (not tested).
+
+From a shell:
+./configure
+make
+
+---------
+optionally:
+su
+<password>
+make install
+------------------
+
+
+to clean:
+make clean

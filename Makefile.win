@@ -1,0 +1,32 @@
+# Project: xportscan
+# Makefile created by Dev-C++ 4.9.8.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = xportscan_private.res
+OBJ  = xportscan.o $(RES)
+LINKOBJ  = xportscan.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -mwindows -lwxmswu  -lstdc++  -lgcc  -lodbc32  -lwsock32  -lwinspool  -lwinmm  -lshell32  -lcomctl32  -lctl3d32  -ladvapi32  -lopengl32  -lglu32  -lole32  -loleaut32  -luuid -lcomctl32 -lws2_32 -lwininet 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/include/c++"  -I"C:/Dev-Cpp/include/c++/mingw32"  -I"C:/Dev-Cpp/include/c++/backward"  -I"C:/Dev-Cpp/include" 
+BIN  = ../xportscan.exe
+CXXFLAGS = $(CXXINCS)-D_X86_=1 -DWIN32 -DWINVER=0x0400 -D__WIN95__ -D__GNUWIN32__ -D__WIN32__ -mthreads -DSTRICT  -D__WXMSW__ -D__WINDOWS__ -Wall -fno-pcc-struct-return -O2 -fno-rtti -fno-exceptions  
+CFLAGS = $(INCS) 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ../xportscan.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	$(CPP) $(LINKOBJ) -o "..\xportscan.exe" $(LIBS)
+
+xportscan.o: xportscan.cpp
+	$(CPP) -c xportscan.cpp -o xportscan.o $(CXXFLAGS)
+
+xportscan_private.res: xportscan_private.rc 
+	$(WINDRES) -i xportscan_private.rc -I rc -o xportscan_private.res -O coff 

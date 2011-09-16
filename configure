@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+my $wxflags, wxlflags;
+$wxlflags = readpipe("wx-config --libs")|| die("Error: Couldn't find wx-config, are you sure you have wxWindows?\n");
+$wxflags = readpipe("wx-config --cppflags")|| die("WTF???");
+open (FILE, ">Makefile.in");
+print FILE "WX_CPP_FLAGS = ", $wxflags, "\n";
+print FILE "WX_L_FLAGS = ", $wxlflags, "\n";
+close (FILE);
+print "run make\n";

@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="What is it?">
+			<param name="Local" value="whatisit.html">
+			</OBJECT>
+
+		</LI>
+			<OBJECT type="text/sitemap">
+			<param name="Name" value="Scanning a Host">
+			<param name="Local" value="scanningahost.html">
+			</OBJECT>
+		</LI>
+			<OBJECT type="text/sitemap">
+			<param name="Name" value="Scan Results">
+			<param name="Local" value="scanresults.html">
+			</OBJECT>
+
+		</LI>
+			<OBJECT type="text/sitemap">
+			<param name="Name" value="Tips">
+			<param name="Local" value="tips.html">
+			</OBJECT>
+		</LI>
+			
+</UL
+<UL>
+			<OBJECT type="text/sitemap">
+			<param name="Name" value="About">
+			<param name="Local" value="about.html">
+			</OBJECT>
+
+</UL>
+<UL>
+			<OBJECT type="text/sitemap">
+			<param name="Name" value="License">
+			<param name="Local" value="license.html">
+			</OBJECT>
+
+</UL>
+<UL>
+			<OBJECT type="text/sitemap">
+			<param name="Name" value="Reference">
+			<param name="Local" value="reference.html">
+			</OBJECT>
+
+</UL>
+</BODY></HTML>
